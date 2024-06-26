@@ -6,6 +6,7 @@ import farm.program.domain.CustomerInfo;
 import farm.program.domain.FarmCrops;
 import farm.program.domain.FarmInfo;
 import farm.program.dto.CustomerInfoDto;
+import farm.program.dto.FarmCropsDto;
 import farm.program.dto.FarmInfoDto;
 import farm.program.repository.CustomerInfoRepository;
 import farm.program.repository.FarmCropsRepository;
@@ -130,5 +131,9 @@ public class FarmService {
 
         FarmInfo savedFarmInfo = farmInfoRepository.save(farmInfo);
         return FarmInfoDto.fromEntity(savedFarmInfo);
+    }
+
+    public List<FarmCropsDto> getAllCropsDto() {
+        return farmCropsRepository.findAllWithFarmName();
     }
 }

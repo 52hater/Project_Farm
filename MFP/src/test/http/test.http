@@ -9,12 +9,12 @@ Content-Disposition: form-data; name="memberDto"
 Content-Type: application/json
 
 {
-  "username": "youcancel",
-  "password": "youcancel",
+  "username": "youcancel1",
+  "password": "youcancel1",
   "address": "qweqf2",
   "phone": "010-1111-1111",
   "email": "qwf@qwe.com",
-  "name": "you"
+  "name": "you1"
 }
 
 --boundary
@@ -28,11 +28,21 @@ Content-Type: image/jpeg
 ### login
 POST http://localhost:8080/login
 Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MTkzMzYyODAsInVzZXJuYW1lIjoieW91Y2FuY2VsMSJ9.tWnyoObtGiXrK3kugE6v0aBoVgRX9bLE5FtbiO3t0_0
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MTkzNzg3MzIsInVzZXJuYW1lIjoieW91Y2FuY2VsMSJ9.V0iPtCuzfgm6nePPHteF2Af3bkQta8OKPcTV6EcpDtY
 
 {
   "username": "youcancel1",
   "password": "youcancel1"
+}
+
+### login
+POST http://localhost:8080/login
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MTkzNzg3MDksInVzZXJuYW1lIjoieW91Y2FuY2VsMiJ9.y1cZiChpUiiaCB2A2FAsNGMrJltgWLMCHTrCmpBCe6Q
+
+{
+  "username": "youcancel2",
+  "password": "youcancel2"
 }
 
 ### doublecheck

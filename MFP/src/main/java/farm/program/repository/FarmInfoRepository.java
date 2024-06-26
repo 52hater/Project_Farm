@@ -13,5 +13,5 @@ public interface FarmInfoRepository extends JpaRepository<FarmInfo, Long> {
     @Query("SELECT DISTINCT f FROM FarmInfo f JOIN f.farmCrops fc WHERE fc.crops = :crop")
     List<FarmInfo> findByCrop(@Param("crop") String crop);
 
-    List<FarmInfo> findByMemberId(Long memberId);
+//    List<FarmInfo> findByMemberId(Long memberId);
 }
